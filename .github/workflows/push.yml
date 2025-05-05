@@ -3,6 +3,7 @@ name: Test on Push
 on:
   push:
   workflow_call:
+  workflow_dispatch:
 
 permissions:
   contents: write
