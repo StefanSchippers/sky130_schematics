@@ -35,6 +35,10 @@ set draw_grid 0
 
 # Remove symbol text
 set enable_layer([xschem get textlayer]) 0
+set enable_layer(13) 0 ;# W/L/mult/nf annotation
+set enable_layer(15) 0 ;# voltage annotator
+set enable_layer(17) 0 ;# current annotator
+set enable_layer(7)  0 ;# pin names
 # xschem set sym_txt 0
 
 # Remove pin layer
