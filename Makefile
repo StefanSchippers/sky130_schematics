@@ -21,7 +21,7 @@ svg/%.svg: schematics/%.sch
 	mkdir -p $(dir $@)
 	mkdir -p $(dir logs/$*)
 	xschem --version
-        which xschem
+	which xschem
 	SCHEMATIC=$* xschem --no_x --log logs/$*.svg.log --script scripts/xschem_generate_svg.tcl
 	# flock /tmp/inkscape.lock \
 	# inkscape $@ --export-overwrite --export-filename=$@ \
